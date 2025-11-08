@@ -1,3 +1,4 @@
+#my other folders got lost somehoq so this is my new python project folder
 print('this program counts the number of  what ever letter u choose in a word example : h in hello = 1 ')
 letter = input('pick a letter ')
 word = input('choose a word ')
