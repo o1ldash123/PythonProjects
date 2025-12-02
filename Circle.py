@@ -14,5 +14,5 @@ class calcCircle(Circle):
     def __init__(self, radius):
         super().__init__(radius)
 choose = calcCircle(float(input("Enter radius of the circle: ")))
-print(f"Area of the circle: {round(choose.area() , 2)}")
-print(f"Circumference of the circle: {round(choose.circumference() , 2)}")
+print(f"Area of the circle: {choose.area() :.2f}")
+print(f"Circumference of the circle: {choose.circumference() :.2f}")

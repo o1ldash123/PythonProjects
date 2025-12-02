@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <!--you can ignore this -->
+    <script defer>
+      'use strict' ;
+      function duplicateList(){
+         var sentence = document.getElementsByName('write')[0].value
+         const  p = document.createElement('p');
+         const box = document.createElement('input');
+         const span = document.createElement('span')  ;
+         document.getElementById('listbody').appendChild(p)  ;
+         p.className = 'allchecks'
+         p.appendChild(box) ;
+         p.appendChild(span) ;
+         box.type = 'checkbox' ;
+         span.innerHTML = sentence ;
+      }
+      function delList(){
+         document.querySelectorAll('.allchecks').forEach(element => element.remove());
+      }
+     
+    </script>
+    <style>
+        *{
+            font-family:cursive;
+        }
+        .dups {
+            color :cyan
+
+        }
+        input[name = write]{border: 3px solid aqua; border-radius: 30px;}
+        #duplicator1{
+            visibility: hidden;
+        }
+    </style>
+    </head>
+    <body>
+       <h2>My To do list : </h2>
+       <label for="write">Type Here :</label>
+       <input type="text" name="write"> <button onclick="duplicateList()">type</button>
+       <div id="listbody">
+
+       </div>
+       <br><br><button onclick="delList(true)">clear all</button>
+         
+      
+    </body>
+</html>
