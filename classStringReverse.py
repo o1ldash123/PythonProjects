@@ -11,9 +11,19 @@ class revString() :
     def __str__(self):
       return self.newString
 print('This program reverses the word u give it using a class')
-Iput = input('type the word you will like to reverse ')    
+"""Iput = input('type the word you will like to reverse ')    
 mine = revString('help' , 0)
-mine.reverse()
+mine.reverse()"""
+a = 2 *((3 * 2) + (3*8) + (8 * 2))
+b = 2 * ((11 * 2) + (2*11) + (2*2))
+c = 2 * (2 * 3)
+print(a + b - c)
+a = 2 * ((3 *2) + (3 * 10) + (2*10))
+b = 2 * ((2 * 2) + (2 * 8) + (2 * 8))
+c = 2 * (2 * 2)
+print( a + b - c)
+
+
 
 
 
